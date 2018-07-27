@@ -10,13 +10,11 @@ import cv2
 import numpy as np
 import urllib.request
 import pickle
-import time
-import datetime
 import faces_train as tr
 import os
-import csv
+import time
 
-#time = datetime.datetime.now()
+
 
 def save_im(n,name):
     img_item = image_dir+'/'+name+'/image{}.jpg'.format(n)
@@ -79,7 +77,8 @@ while(True):
         elif conf<100:
            print("Training faces now")
            user = user + 1
-           name = 'user{}'.format(user)
+           millis = int(round(time.time() * 1000))
+           name = str(millis)+'user{}'.format(user)
            #Add to csv # todo
            cv2.putText(frame, "Training nowq", (x,y), font, 1, color, stroke, cv2.LINE_AA)
            db = open("users.csv","w+")
