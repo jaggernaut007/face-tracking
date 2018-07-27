@@ -17,10 +17,11 @@ Track known and unknown face.
 
 
 ## Installation 
-1) Download All the  files
-2) (Optional) Add custom training data to images folder under the uses name for better accuracy
+1) Download All the  files from the zip file
+2) (Optional) Add custom training data to images folder under the users name for better accuracy
 4) Install all imports
 3) Run faces_train.py
 4) Run faces.py for tracking faces.
 
 Let me know if I might have skipped some issues with the script/installation/bugs
+
